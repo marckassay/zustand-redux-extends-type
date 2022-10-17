@@ -30,5 +30,7 @@ __metadata:
   resolution: "zustand-redux-extends-type@workspace:."
   dependencies:
     typescript: latest
+  peerDependencies:
+    zustand: "*"
   languageName: unknown
   linkType: soft

@@ -3,5 +3,8 @@
   "packageManager": "yarn@3.2.4",
   "devDependencies": {
     "typescript": "latest"
+  },
+  "peerDependencies": {
+    "zustand": "*"
   }
 }
