@@ -1,4 +1,7 @@
 {
   "name": "zustand-redux-extends-type",
-  "packageManager": "yarn@3.2.4"
+  "packageManager": "yarn@3.2.4",
+  "devDependencies": {
+    "typescript": "latest"
+  }
 }
