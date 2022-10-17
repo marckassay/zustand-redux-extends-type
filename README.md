@@ -1,0 +1,1 @@
+# zustand-redux-extends-type
