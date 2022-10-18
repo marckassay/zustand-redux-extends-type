@@ -2,6 +2,8 @@ type EventName = Record<string, unknown>;
 type FeatureEventMap = Record<string, EventName>;
 type Separator = "/";
 
+// Credit given [here](https://stackoverflow.com/a/50375286/648789).
+// prettier-ignore
 type UnionToIntersection<U> = (U extends any ? (k: U) => void : never) extends (
   k: infer I
 ) => void
@@ -38,6 +40,11 @@ type ReduxAction<Type extends FeatureEventMap> = {
   };
 }[keyof ActionsIntersect<Type>];
 
-export type ReduxExtends<T extends FeatureEventMap> = PayloadOptionalIfUndefined<
-  ReduxAction<T>
->;
+/**
+ * To enforce typings for an `action` parameter of a `reducer` or `dispatch`.
+ *
+ * By doing so, conditional expressions evalutating the `type` property of `action` type, will have the `payload` type
+ * infered in the block scope of condition. Or will have `payload` typed when used in `dispatch`.
+ */
+export type ReduxExtends<T extends FeatureEventMap> =
+  PayloadOptionalIfUndefined<ReduxAction<T>>;

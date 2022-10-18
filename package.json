@@ -1,10 +1,20 @@
 {
   "name": "zustand-redux-extends-type",
+  "version": "1.0.0",
+  "main": "./lib/main.js",
+  "types": "./lib/main.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
   "packageManager": "yarn@3.2.4",
+  "scripts": {
+    "build": "tsc",
+    "publish": "yarn build && npm publish"
+  },
   "devDependencies": {
     "typescript": "latest"
   },
   "peerDependencies": {
-    "zustand": "*"
+    "zustand": ">=4"
   }
 }
