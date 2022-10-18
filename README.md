@@ -47,4 +47,4 @@ The structure of this map type, `FeatureEventActions`, is premised on [Redux's r
 
 "_The type field should be a readable string, and is usually written as 'feature/eventName'_"
 
-For this example, 'grumpiness' and 'happiness' are features with event names of 'increase' and 'show all' respectively. Each event name is typed for what will be its `payload` type. Any `action` object of `ReduxAction<FeatureEventActions>`, either as a parameter of `reducer` or `dispatch`, has its `type` property constrained to what will be parsed by TypeScript. This will also dictate the `payload` type.
+For this example, 'grumpiness' and 'happiness' are features with event names of 'increase' and 'show all' respectively. Each event name is typed for what will be its `payload` type. Any `action` object of `ReduxExtends<FeatureEventActions>`, either as a parameter of `reducer` or `dispatch`, has its `type` property constrained to what will be parsed by TypeScript. This will also dictate the `payload` type.
