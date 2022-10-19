@@ -806,6 +806,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prettier@npm:^2.7.1":
+  version: 2.7.1
+  resolution: "prettier@npm:2.7.1"
+  bin:
+    prettier: bin-prettier.js
+  checksum: 55a4409182260866ab31284d929b3cb961e5fdb91fe0d2e099dac92eaecec890f36e524b4c19e6ceae839c99c6d7195817579cdffc8e2c80da0cb794463a748b
+  languageName: node
+  linkType: hard
+
 "punycode@npm:^2.1.0":
   version: 2.1.1
   resolution: "punycode@npm:2.1.1"
@@ -1007,6 +1016,7 @@ __metadata:
   resolution: "zustand-redux-extends-type@workspace:."
   dependencies:
     eslint: ^8.25.0
+    prettier: ^2.7.1
     typescript: latest
   peerDependencies:
     zustand: ">=4"
