@@ -12,6 +12,7 @@
     "publish": "yarn build && npm publish"
   },
   "devDependencies": {
+    "eslint": "^8.25.0",
     "typescript": "latest"
   },
   "peerDependencies": {
