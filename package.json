@@ -1,6 +1,25 @@
 {
   "name": "zustand-redux-extends-type",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "description": "A zustand's redux middleware extended TS type",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "state",
+    "manager",
+    "management",
+    "redux",
+    "store",
+    "zustand",
+    "typescript",
+    "types",
+    "typings"
+  ],
+  "author": "Marc Kassay",
+  "bugs": {
+    "url": "https://github.com/marckassay/zustand-redux-extends-type/issues"
+  },
+  "homepage": "https://github.com/marckassay/zustand-redux-extends-type",
   "main": "./lib/main.js",
   "types": "./lib/main.d.ts",
   "files": [

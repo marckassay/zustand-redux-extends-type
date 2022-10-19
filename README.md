@@ -1,6 +1,12 @@
 # zustand-redux-extends-type
 
-Leveraging typings(`ReduxExtends` and `FeatureEventActions`) as below eliminates the need to use any type assertions in reducers. It also enforces only valid values for properties when `dispatch` is being typed out.
+To be used with [zustand's redux middleware](https://github.com/pmndrs/zustand/blob/main/docs/guides/flux-inspired-practice.md). To install:
+
+```
+npm add zustand-redux-extends-type -D # or yarn add zustand-redux-extends-type -D
+```
+
+Leveraging typings (`ReduxExtends` and `FeatureEventActions`) as below eliminates the need to use any type assertions in reducers. It also enforces only valid values for properties when `dispatch` is being typed out.
 
 ```typescript
 import type { ReduxExtends } from "zustand-redux-extends-type";
